@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>寸止挑战-寸止挑战规则技巧_寸止挑战训练方法</title>
+<meta name="description" content="寸止挑战主题首页：讲清寸止挑战的基本玩法、常见规则、练习节奏与自控训练要点，提供可读的入门说明与进阶思路。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1b2d'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23ffb347' stroke-width='4'/%3E%3Cpath d='M32 20v12l9 6' stroke='%23ffb347' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#0f1b2d;
+  --ink-soft:#2a3a52;
+  --paper:#f6f3ec;
+  --card:#ffffff;
+  --accent:#ffb347;
+  --accent-deep:#e8862b;
+  --line:#e2dccf;
+  --muted:#6b7484;
+  --radius:16px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,"Segoe UI",sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px;}
+
+/* header */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(15,27,45,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(255,179,71,.18);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 22px;max-width:1120px;margin:0 auto;}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:#fff;}
+.brand-mark{width:38px;height:38px;flex:0 0 38px;}
+.brand-text{font-size:1.16rem;font-weight:800;letter-spacing:.5px;white-space:nowrap;}
+.nav{display:flex;gap:6px;flex-wrap:wrap;}
+.nav a{
+  color:#cfd8e4;text-decoration:none;font-size:.92rem;
+  padding:7px 12px;border-radius:999px;transition:.2s;
+}
+.nav a:hover,.nav a:focus-visible{background:rgba(255,179,71,.16);color:#ffd79a;}
+.nav a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+
+/* hero */
+.hero{
+  background:
+    radial-gradient(900px 380px at 88% -10%,rgba(255,179,71,.22),transparent 65%),
+    linear-gradient(160deg,#0f1b2d 0%,#182b46 60%,#1d3554 100%);
+  color:#fff;
+  padding:56px 0 64px;
+  overflow:hidden;
+}
+.hero-grid{display:grid;grid-template-columns:1.25fr .85fr;gap:44px;align-items:center;}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.8rem;letter-spacing:2px;color:#ffd79a;
+  border:1px solid rgba(255,179,71,.45);border-radius:999px;
+  padding:5px 14px;margin-bottom:20px;
+}
+.hero h1{
+  font-size:clamp(1.9rem,4.4vw,2.9rem);
+  line-height:1.28;margin:0 0 18px;font-weight:900;letter-spacing:1px;
+}
+.hero p.lead{color:#c8d3e2;font-size:1.02rem;margin:0 0 26px;max-width:36em;}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 24px;border-radius:999px;font-size:.96rem;font-weight:700;
+  text-decoration:none;transition:.2s;border:1px solid transparent;
+}
+.btn-primary{background:var(--accent);color:#231302;}
+.btn-primary:hover{background:#ffc76b;transform:translateY(-1px);}
+.btn-ghost{border-color:rgba(255,255,255,.32);color:#e8eef7;}
+.btn-ghost:hover{border-color:var(--accent);color:#ffd79a;}
+.btn[aria-disabled="true"]{opacity:.55;cursor:not-allowed;pointer-events:none;}
+.hero-art{display:flex;justify-content:center;}
+.hero-art svg{width:100%;max-width:300px;height:auto;}
+
+/* sections */
+section{padding:58px 0;}
+.sec-head{max-width:44em;margin-bottom:34px;}
+.sec-head h2{
+  font-size:clamp(1.35rem,2.6vw,1.7rem);margin:0 0 10px;font-weight:800;letter-spacing:.5px;
+}
+.sec-head h2::before{
+  content:"";display:inline-block;width:9px;height:9px;border-radius:50%;
+  background:var(--accent-deep);margin-right:10px;vertical-align:middle;
+}
+.sec-head p{margin:0;color:var(--muted);font-size:.96rem;}
+
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 22px;transition:.22s;
+}
+.card:hover{border-color:#f0c98c;box-shadow:0 10px 26px rgba(15,27,45,.07);transform:translateY(-2px);}
+.card h3{margin:0 0 8px;font-size:1.06rem;font-weight:800;}
+.card p{margin:0;font-size:.93rem;color:var(--ink-soft);}
+.card .tag{
+  display:inline-block;font-size:.72rem;letter-spacing:1px;color:var(--accent-deep);
+  border:1px solid #f3d7ad;border-radius:999px;padding:2px 10px;margin-bottom:12px;background:#fffaf1;
+}
+.icon-badge{
+  width:40px;height:40px;border-radius:12px;background:#fff4e2;
+  display:flex;align-items:center;justify-content:center;margin-bottom:14px;
+}
+
+/* rules list */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;}
+.rule-list{list-style:none;padding:0;margin:0;counter-reset:r;}
+.rule-list li{
+  counter-increment:r;position:relative;padding:16px 0 16px 54px;
+  border-bottom:1px dashed var(--line);font-size:.96rem;color:var(--ink-soft);
+}
+.rule-list li:last-child{border-bottom:none;}
+.rule-list li::before{
+  content:counter(r,decimal-leading-zero);
+  position:absolute;left:0;top:15px;
+  width:36px;height:36px;border-radius:10px;
+  background:var(--ink);color:var(--accent);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.82rem;font-weight:800;letter-spacing:.5px;
+}
+.rule-list strong{color:var(--ink);}
+.note-box{
+  background:#fffaf1;border:1px solid #f3dfbd;border-radius:var(--radius);
+  padding:26px 24px;
+}
+.note-box h3{margin:0 0 12px;font-size:1.05rem;}
+.note-box p{margin:0 0 12px;font-size:.93rem;color:var(--ink-soft);}
+.note-box p:last-child{margin-bottom:0;}
+
+/* stats band */
+.band{background:#0f1b2d;color:#e8eef7;}
+.band .stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;text-align:center;}
+.band .stat b{display:block;font-size:1.6rem;color:var(--accent);font-weight:900;line-height:1.3;}
+.band .stat span{font-size:.85rem;color:#a9b7c9;}
+.band .band-note{margin-top:26px;font-size:.84rem;color:#8695a9;text-align:center;}
+
+/* faq */
+.faq details{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:16px 20px;margin-bottom:12px;
+}
+.faq summary{
+  cursor:pointer;font-weight:700;font-size:.98rem;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";color:var(--accent-deep);font-size:1.2rem;font-weight:800;}
+.faq details[open] summary::after{content:"–";}
+.faq details p{margin:12px 0 0;font-size:.93rem;color:var(--ink-soft);}
+
+/* footer */
+.site-footer{background:#0b1421;color:#93a1b5;padding:44px 0 30px;font-size:.88rem;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:30px;}
+.site-footer h4{color:#e8eef7;font-size:.95rem;margin:0 0 12px;letter-spacing:.5px;}
+.site-footer p{margin:0 0 10px;line-height:1.8;}
+.site-footer a{color:#b9c6d8;text-decoration:none;}
+.site-footer a:hover{color:var(--accent);}
+.footer-links a{display:block;margin-bottom:8px;}
+.footer-bottom{border-top:1px solid #1c2a3d;padding-top:18px;text-align:center;font-size:.8rem;color:#6d7b8f;}
+
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:30px;}
+  .hero-art{order:-1;justify-content:flex-start;}
+  .hero-art svg{max-width:180px;}
+  .card-grid{grid-template-columns:1fr;}
+  .split{grid-template-columns:1fr;gap:28px;}
+  .band .stat-row{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr;gap:24px;}
+  .header-inner{flex-direction:column;align-items:flex-start;gap:10px;}
+  .nav{gap:2px;}
+  .nav a{padding:6px 10px;font-size:.88rem;}
+  section{padding:44px 0;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto!important;}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="寸止挑战 首页">
+      <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#132238"/>
+        <circle cx="32" cy="33" r="17" fill="none" stroke="#ffb347" stroke-width="3.6"/>
+        <path d="M32 21v12.5l8.6 5.6" stroke="#ffb347" stroke-width="3.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M32 8v4M32 54v4M8 33h4M52 33h4" stroke="#6b7f9c" stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">寸止挑战</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#basics">玩法入门</a>
+      <a href="#rules">规则要点</a>
+      <a href="#training">练习节奏</a>
+      <a href="#faq">常见问题</a>
+      <a href="#download">下载</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">自控练习 · 节奏观察 · 边界记录</span>
+        <h1 id="hero-title">寸止挑战</h1>
+        <p class="lead">寸止挑战是一种围绕“在关键节点停下”的自控练习方式：参与者为自己设定目标与停止信号，记录每次能否在临界点稳住节奏。这个首页把寸止挑战的玩法、规则、练习节奏与常见疑问集中在一处，方便初次接触的人先弄懂再开始。</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#basics">了解寸止挑战玩法</a>
+          <a class="btn btn-ghost" href="#rules">查看规则要点</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 300 300" role="img">
+          <defs>
+            <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffb347"/>
+              <stop offset="1" stop-color="#e8862b"/>
+            </linearGradient>
+          </defs>
+          <circle cx="150" cy="150" r="112" fill="none" stroke="#24384f" stroke-width="18"/>
+          <circle cx="150" cy="150" r="112" fill="none" stroke="url(#ring)" stroke-width="18"
+                  stroke-linecap="round" stroke-dasharray="520 704" transform="rotate(-90 150 150)"/>
+          <circle cx="150" cy="150" r="72" fill="#132238" stroke="#2c4259" stroke-width="2"/>
+          <path d="M150 106v46l30 20" stroke="#ffb347" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="150" cy="150" r="6" fill="#ffd79a"/>
+          <circle cx="150" cy="38" r="7" fill="#ffb347"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- BASICS -->
+  <section id="basics">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>寸止挑战是什么：从一次“停住”开始</h2>
+        <p>先把概念讲清楚，再决定要不要加入自己的练习计划。以下三块内容对应初识者最常问的三个方向。</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <div class="icon-badge" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8862b" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+            </svg>
+          </div>
+          <span class="tag">核心概念</span>
+          <h3>什么是寸止挑战</h3>
+          <p>寸止挑战强调“接近临界时主动收住”。参与者给自己划一条界线，在接近界线前识别身体与情绪的信号，并练习把动作停在该停的位置，而不是被节奏推着走。</p>
+        </article>
+        <article class="card">
+          <div class="icon-badge" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8862b" stroke-width="2" stroke-linecap="round">
+              <path d="M4 18l5-5 4 3 7-8"/><path d="M4 6h4"/>
+            </svg>
+          </div>
+          <span class="tag">练习目标</span>
+          <h3>寸止挑战练的是什么</h3>
+          <p>它更像一次专注力与自我观察的练习：能否在兴奋、紧张或急躁时依然按计划停下来。记录下来的不是成绩排名，而是每次停住的时机与事后感受。</p>
+        </article>
+        <article class="card">
+          <div class="icon-badge" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8862b" stroke-width="2" stroke-linecap="round">
+              <rect x="4" y="4" width="16" height="16" rx="4"/><path d="M8 12h8"/>
+            </svg>
+          </div>
+          <span class="tag">适合人群</span>
+          <h3>谁适合了解寸止挑战</h3>
+          <p>对自控训练、节奏管理或身体感知感兴趣的人可以了解寸止挑战的基本思路。它不替代专业建议，练习中若出现不适，应立刻停止并寻求可靠的健康信息。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- RULES -->
+  <section id="rules" style="background:#fbf8f2;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>寸止挑战规则要点</h2>
+        <p>规则由参与者自己约定，但几条通用原则能让寸止挑战更清晰、更容易复盘。</p>
+      </div>
+      <div class="split">
+        <ol class="rule-list">
+          <li><strong>先定界线再开始。</strong>开始前写清楚“停在哪里”，避免中途临时放宽标准，让寸止挑战失去练习意义。</li>
+          <li><strong>设一个明确停止信号。</strong>可以是计时、口令或身体感受，信号一旦出现就执行停止动作。</li>
+          <li><strong>单次时长保持可控。</strong>初期把每轮时间压短，宁可在有余力时结束，也不要把自己推到失控。</li>
+          <li><strong>每次只记录一件事。</strong>比如“是否按时停住”“停住后的感受”，让寸止挑战的记录简洁可比。</li>
+          <li><strong>出现不适立即终止。</strong>任何疼痛、眩晕或明显不适都应视为最高优先级的停止信号。</li>
+        </ol>
+        <aside class="note-box">
+          <h3>关于寸止挑战的边界</h3>
+          <p>寸止挑战是一个自我约定的练习框架，不是医疗方案，也不能用来判断身体好坏。它的价值在于让人更熟悉自己的节奏与反应。</p>
+          <p>如果练习让你产生焦虑、强迫感，或反复突破自己的底线，说明当前强度不合适，应暂停并重新评估目标。</p>
+          <p>未成年人、身体状态不佳者，建议先咨询可信赖的成年人或专业人士，再决定是否参与任何形式的寸止挑战。</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINING -->
+  <section id="training">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>寸止挑战的练习节奏</h2>
+        <p>把寸止挑战放进一段有起伏的周期里，比一次性冲到底更容易坚持，也更方便观察变化。</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <span class="tag">第一阶段</span>
+          <h3>熟悉信号</h3>
+          <p>用短轮次练习识别“快到了”的感觉，只做观察不做评价。这一阶段的目标是让寸止挑战变得可描述，而不是追求停得多晚。</p>
+        </article>
+        <article class="card">
+          <span class="tag">第二阶段</span>
+          <h3>稳定停住</h3>
+          <p>在固定条件下重复，记录成功停住的比例。寸止挑战的进步通常体现在稳定性上，而不是某一两次的极限表现。</p>
+        </article>
+        <article class="card">
+          <span class="tag">第三阶段</span>
+          <h3>复盘调整</h3>
+          <p>每周回看记录，找出最容易失控的时间段或情境，再调整界线与时长。寸止挑战的节奏应当随状态变化而调整。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAND -->
+  <section class="band">
+    <div class="wrap">
+      <div class="stat-row">
+        <div class="stat"><b>3</b><span>阶段练习节奏</span></div>
+        <div class="stat"><b>5</b><span>条通用规则要点</span></div>
+        <div class="stat"><b>1</b><span>份每次记录</span></div>
+        <div class="stat"><b>0</b><span>排名与比较</span></div>
+      </div>
+      <p class="band-note">以上为本站对寸止挑战内容结构的说明，不构成任何效果承诺。</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>寸止挑战常见问题</h2>
+        <p>把最容易混淆的几点集中回答，帮助你在开始前形成合理预期。</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>寸止挑战需要固定时长吗？</summary>
+          <p>不需要。寸止挑战的时长由参与者按自身状态设定，初期宜短不宜长。关键是停止信号清晰、执行到位，而不是把时间拉长。</p>
+        </details>
+        <details>
+          <summary>寸止挑战有统一评分标准吗？</summary>
+          <p>没有。寸止挑战是个人练习框架，记录用于自我复盘，不用于横向比较。不同人的界线与节奏本就不同。</p>
+        </details>
+        <details>
+          <summary>中途没停住怎么办？</summary>
+          <p>如实记录即可，不必自责。寸止挑战的意义在于发现“为什么没停住”，比如信号识别太晚或目标设定过高，下一次据此调整。</p>
+        </details>
+        <details>
+          <summary>多久练一次比较合适？</summary>
+          <p>没有通用频率。建议从每周少量、短轮次开始，观察身体与情绪反馈，再决定是否增加。寸止挑战不应挤占休息与正常生活。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section id="download" style="background:#0f1b2d;color:#e8eef7;">
+    <div class="wrap" style="text-align:center;max-width:720px;">
+      <h2 style="font-size:clamp(1.3rem,2.6vw,1.6rem);margin:0 0 12px;font-weight:800;">寸止挑战记录卡</h2>
+      <p style="color:#a9b7c9;font-size:.96rem;margin:0 0 26px;">把每次的界线、停止信号与事后感受写在一页上，方便对照复盘。记录卡用于个人练习，不包含评分与排名。</p>
+      <a class="btn btn-primary" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">下载</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>寸止挑战</h4>
+        <p>一个围绕“在临界点停住”的自控练习主题站，提供玩法说明、规则要点、练习节奏与常见问题，帮助访问者先理解再决定是否参与。</p>
+        <p>内容为一般性练习框架介绍，不构成医疗或健康建议。</p>
+      </div>
+      <div class="footer-links">
+        <h4>站内导航</h4>
+        <a href="#basics">玩法入门</a>
+        <a href="#rules">规则要点</a>
+        <a href="#training">练习节奏</a>
+        <a href="#faq">常见问题</a>
+      </div>
+      <div class="footer-links">
+        <h4>练习提示</h4>
+        <a href="#rules">先定界线再开始</a>
+        <a href="#training">按阶段调整强度</a>
+        <a href="#faq">如实记录不比较</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2024 寸止挑战 · 主题首页</div>
+  </div>
+</footer>
+
+</body>
+</html>
