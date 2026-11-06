@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>天堂免费电影在线观看免费-免费电影在线观看_天堂电影网高清片库</title>
+<meta name="description" content="天堂免费电影在线观看免费首页，汇集热门电影、经典片单与高清在线观影入口，按类型与口碑整理片单，帮助观众快速找到想看的电影。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141a2b'/%3E%3Cpath d='M24 18l24 14-24 14z' fill='%23f5b93f'/%3E%3C/svg%3E">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#0f1420;--bg2:#161d2e;--card:#1b2336;--line:#2a3550;
+--txt:#e8ecf6;--sub:#9aa7c2;--gold:#f5b93f;--gold-d:#d99a1d;--teal:#4fd1c5;
+}
+body{background:var(--bg);color:var(--txt);font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(15,20,32,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:26px;height:70px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;letter-spacing:.2px;color:var(--txt);white-space:nowrap}
+.logo svg{flex:0 0 auto}
+.navlinks{display:flex;gap:22px;margin-left:auto;font-size:15px;color:var(--sub)}
+.navlinks a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold);color:#1a1206;font-weight:700;padding:9px 18px;border-radius:8px;font-size:14px;white-space:nowrap}
+.nav-cta:hover{background:var(--gold-d)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:6px 10px;font-size:16px;cursor:pointer}
+/* hero */
+.hero{padding:64px 0 54px;background:radial-gradient(ellipse at 78% 12%,rgba(245,185,63,.14),transparent 55%),radial-gradient(ellipse at 8% 88%,rgba(79,209,197,.10),transparent 50%)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.tag{display:inline-block;font-size:13px;color:var(--gold);border:1px solid rgba(245,185,63,.45);border-radius:999px;padding:4px 14px;margin-bottom:18px;letter-spacing:.5px}
+h1{font-size:34px;line-height:1.35;font-weight:800;letter-spacing:.5px}
+.hero p.lead{margin-top:16px;color:var(--sub);font-size:16px;max-width:34em}
+.hero-actions{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 26px;border-radius:9px;font-weight:700;font-size:15px}
+.btn-main{background:var(--gold);color:#1a1206}
+.btn-main:hover{background:var(--gold-d)}
+.btn-ghost{border:1px solid var(--line);color:var(--txt)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.hero-stats{display:flex;gap:30px;margin-top:34px;flex-wrap:wrap}
+.hero-stats div{font-size:13px;color:var(--sub)}
+.hero-stats strong{display:block;font-size:20px;color:var(--gold);font-weight:800}
+.poster{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--bg2);aspect-ratio:4/5}
+.poster svg{display:block;width:100%;height:100%}
+.poster figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:linear-gradient(transparent,rgba(10,14,22,.95));font-size:13px;color:var(--sub)}
+.poster figcaption b{display:block;color:var(--txt);font-size:15px}
+/* section base */
+section{padding:52px 0}
+.s-head{display:flex;align-items:baseline;justify-content:space-between;gap:18px;margin-bottom:26px;flex-wrap:wrap}
+h2{font-size:23px;font-weight:800;letter-spacing:.3px}
+h2::before{content:"";display:inline-block;width:4px;height:18px;background:var(--gold);border-radius:2px;margin-right:10px;vertical-align:-2px}
+.s-head p{color:var(--sub);font-size:14px}
+/* pick cards */
+.picks{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pick{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:10px;transition:.2s}
+.pick:hover{border-color:rgba(245,185,63,.5);transform:translateY(-3px)}
+.pick .num{font-size:12px;color:var(--teal);letter-spacing:2px;font-weight:700}
+.pick h3{font-size:17px;font-weight:700}
+.pick p{font-size:14px;color:var(--sub);flex:1}
+.pick .meta{font-size:12.5px;color:var(--gold)}
+/* list rows */
+.rows{display:grid;gap:14px}
+.row{display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:11px;padding:16px 20px}
+.row .idx{font-size:20px;font-weight:800;color:rgba(245,185,63,.6);text-align:center}
+.row h3{font-size:16px;font-weight:700;margin-bottom:3px}
+.row p{font-size:13.5px;color:var(--sub)}
+.row .tagm{font-size:12px;color:var(--teal);border:1px solid rgba(79,209,197,.4);border-radius:6px;padding:3px 9px;white-space:nowrap}
+/* filters */
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.filters button{background:var(--bg2);border:1px solid var(--line);color:var(--sub);padding:8px 16px;border-radius:999px;font-size:14px;cursor:pointer;transition:.15s;font-family:inherit}
+.filters button:hover{color:var(--txt);border-color:var(--gold)}
+.filters button.on{background:var(--gold);color:#1a1206;border-color:var(--gold);font-weight:700}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.fcard{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;transition:.2s}
+.fcard:hover{border-color:rgba(245,185,63,.5);transform:translateY(-3px)}
+.thumb{aspect-ratio:16/10;background:linear-gradient(135deg,#243050,#1a2236);display:flex;align-items:center;justify-content:center;position:relative}
+.thumb svg{width:100%;height:100%}
+.fcard .body{padding:15px 16px 17px;display:flex;flex-direction:column;gap:7px;flex:1}
+.fcard h3{font-size:15.5px;font-weight:700}
+.fcard .d{font-size:13px;color:var(--sub);flex:1}
+.fcard .foot{display:flex;justify-content:space-between;font-size:12px;color:var(--gold)}
+/* guide */
+.guide{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.gbox{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:26px}
+.gbox h3{font-size:17px;margin-bottom:12px;color:var(--gold)}
+.gbox p{font-size:14.5px;color:var(--sub);margin-bottom:10px}
+.gbox ul{list-style:none;font-size:14.5px;color:var(--sub);display:grid;gap:9px}
+.gbox li{padding-left:18px;position:relative}
+.gbox li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:50%;background:var(--teal)}
+/* faq */
+.faq{display:grid;gap:12px;max-width:860px}
+details{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:16px 20px}
+summary{cursor:pointer;font-weight:700;font-size:15.5px;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--gold);font-weight:800}
+details[open] summary::after{content:"−"}
+details p{margin-top:11px;font-size:14.5px;color:var(--sub)}
+/* download */
+.dl{background:linear-gradient(120deg,#1d2740,#161d2e);border:1px solid var(--line);border-radius:14px;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap}
+.dl h2{margin-bottom:10px}
+.dl p{color:var(--sub);font-size:14.5px;max-width:40em}
+.btn-dl{background:var(--gold);color:#1a1206;font-weight:800;padding:13px 34px;border-radius:9px;font-size:15px;pointer-events:none;opacity:.95}
+/* footer */
+footer{border-top:1px solid var(--line);padding:38px 0 44px;background:#0c111b}
+.fgrid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.fbrand{max-width:330px}
+.fbrand .logo{margin-bottom:12px}
+.fbrand p{font-size:13.5px;color:var(--sub)}
+.fcol h4{font-size:14px;margin-bottom:12px;color:var(--txt)}
+.fcol ul{list-style:none;display:grid;gap:9px;font-size:13.5px;color:var(--sub)}
+.fcol a:hover{color:var(--gold)}
+.copy{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:#6d7b96;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+@media(max-width:900px){
+.hero-grid{grid-template-columns:1fr;gap:34px}
+.poster{max-width:340px;margin:0 auto;width:100%}
+.picks{grid-template-columns:1fr 1fr}
+.cards{grid-template-columns:1fr 1fr}
+.guide{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+.nav{height:60px;gap:14px}
+.logo{font-size:14.5px;white-space:normal;line-height:1.3}
+.navlinks{display:none}
+.nav-cta{display:none}
+h1{font-size:24px}
+.hero{padding:40px 0 36px}
+.picks{grid-template-columns:1fr}
+.cards{grid-template-columns:1fr}
+.row{grid-template-columns:44px 1fr;gap:12px;padding:14px 16px}
+.row .tagm{grid-column:2;justify-self:start}
+section{padding:38px 0}
+.dl{padding:24px}
+h2{font-size:20px}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo" aria-label="天堂免费电影在线观看免费首页">
+      <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1b2336"/><path d="M24 18l24 14-24 14z" fill="#f5b93f"/></svg>
+      <span>天堂免费电影在线观看免费</span>
+    </a>
+    <nav class="navlinks" aria-label="主导航">
+      <a href="#picks">本周精选</a>
+      <a href="#library">片库分类</a>
+      <a href="#guide">观影指南</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="nav-cta" href="#library">开始找片</a>
+    <button class="menu-btn" type="button" aria-label="展开导航" onclick="document.getElementById('mnav').hidden=!document.getElementById('mnav').hidden">☰</button>
+  </div>
+  <div id="mnav" class="wrap" hidden style="padding-bottom:16px">
+    <div style="display:flex;flex-wrap:wrap;gap:14px;font-size:14.5px;color:#9aa7c2">
+      <a href="#picks">本周精选</a><a href="#library">片库分类</a><a href="#guide">观影指南</a><a href="#faq">常见问题</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tag">在线观影 · 片单直达</span>
+        <h1>天堂免费电影在线观看免费</h1>
+        <p class="lead">一个围绕“找片—看片”整理的电影页面：按类型与口碑组织片单，把热门新片和耐看老片放在同一入口，减少在列表里反复翻找的时间。天堂免费电影在线观看免费关注的是“今天看什么”，而不是堆砌链接。</p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#library">浏览片库</a>
+          <a class="btn btn-ghost" href="#picks">看本周精选</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>6</strong>大类型片单</div>
+          <div><strong>3</strong>种选片路径</div>
+          <div><strong>每日</strong>更新推荐位</div>
+        </div>
+      </div>
+      <figure class="poster">
+        <svg viewBox="0 0 400 500" role="img" aria-label="电影海报风格插画">
+          <defs>
+            <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#243050"/><stop offset="1" stop-color="#131a29"/>
+            </linearGradient>
+            <linearGradient id="lg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#f5b93f" stop-opacity=".85"/><stop offset="1" stop-color="#4fd1c5" stop-opacity=".25"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="500" fill="url(#pg)"/>
+          <circle cx="300" cy="110" r="70" fill="url(#lg)" opacity=".5"/>
+          <circle cx="86" cy="380" r="46" fill="#4fd1c5" opacity=".18"/>
+          <g fill="#0f1420" stroke="#f5b93f" stroke-width="3">
+            <rect x="70" y="170" width="260" height="150" rx="10"/>
+          </g>
+          <path d="M170 218l60 27-60 27z" fill="#f5b93f"/>
+          <g stroke="#2a3550" stroke-width="8" stroke-linecap="round">
+            <line x1="70" y1="360" x2="330" y2="360"/>
+            <line x1="70" y1="392" x2="250" y2="392"/>
+          </g>
+          <g fill="#2a3550">
+            <circle cx="96" cy="140" r="5"/><circle cx="120" cy="140" r="5"/><circle cx="144" cy="140" r="5"/>
+          </g>
+        </svg>
+        <figcaption><b>片单式首页</b>按心情、类型、口碑三条线索找片</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="picks">
+    <div class="wrap">
+      <div class="s-head">
+        <h2>本周精选片单</h2>
+        <p>三条不同场景的选片思路，每一条对应一种观看需求</p>
+      </div>
+      <div class="picks">
+        <article class="pick">
+          <span class="num">01 / 放松</span>
+          <h3>轻松喜剧与治愈系</h3>
+          <p>适合下班后不想动脑的时段。节奏明快、冲突温和，结尾普遍收得干净。此类片单在站内按“片长 90–120 分钟”优先排列，方便睡前一次看完。</p>
+          <span class="meta">适合：独处、周末午后</span>
+        </article>
+        <article class="pick">
+          <span class="num">02 / 沉浸</span>
+          <h3>剧情长片与经典重看</h3>
+          <p>为愿意花两小时以上沉进去的观众准备。片单标注年份与主要奖项记录，老片排在前面，便于对照不同年代的叙事方式，也适合补看错过的名作。</p>
+          <span class="meta">适合：深夜、长假</span>
+        </article>
+        <article class="pick">
+          <span class="num">03 / 陪伴</span>
+          <h3>合家欢与动画</h3>
+          <p>面向全家一起观看的场景，题材以冒险、成长和动物故事为主。片单会避开恐怖与强冲突类型，标注中文配音信息，方便家里有孩子的观众直接选择。</p>
+          <span class="meta">适合：家庭、亲子</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="library">
+    <div class="wrap">
+      <div class="s-head">
+        <h2>片库分类</h2>
+        <p>点击标签筛选，片单会即时显示对应类型</p>
+      </div>
+      <div class="filters" role="group" aria-label="按类型筛选片单">
+        <button type="button" class="on" data-cat="all">全部</button>
+        <button type="button" data-cat="剧情">剧情</button>
+        <button type="button" data-cat="喜剧">喜剧</button>
+        <button type="button" data-cat="动作">动作</button>
+        <button type="button" data-cat="动画">动画</button>
+        <button type="button" data-cat="悬疑">悬疑</button>
+        <button type="button" data-cat="纪录">纪录</button>
+      </div>
+      <div class="cards" id="cardList">
+        <article class="fcard" data-cat="剧情">
+          <div class="thumb"><svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" fill="#1f2a44"/><circle cx="250" cy="60" r="46" fill="#f5b93f" opacity=".35"/><path d="M0 200l90-90 60 60 70-70 100 100z" fill="#2a3550"/></svg></div>
+          <div class="body"><h3>长夜将尽</h3><p class="d">小镇家庭在一年四季里的聚散，叙事克制，靠细节推进。</p><div class="foot"><span>剧情</span><span>118 分钟</span></div></div>
+        </article>
+        <article class="fcard" data-cat="喜剧">
+          <div class="thumb"><svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" fill="#24243a"/><rect x="60" y="50" width="200" height="100" rx="12" fill="#f5b93f" opacity=".3"/><circle cx="120" cy="100" r="18" fill="#4fd1c5" opacity=".6"/><circle cx="200" cy="100" r="18" fill="#4fd1c5" opacity=".6"/></svg></div>
+          <div class="body"><h3>周末合伙人</h3><p class="d">两个邻居误打误撞开了家修理铺，笑点来自日常而非夸张。</p><div class="foot"><span>喜剧</span><span>96 分钟</span></div></div>
+        </article>
+        <article class="fcard" data-cat="动作">
+          <div class="thumb"><svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" fill="#1c2436"/><path d="M40 160l80-100 60 70 40-50 60 80z" fill="#4fd1c5" opacity=".35"/><line x1="0" y1="170" x2="320" y2="170" stroke="#f5b93f" stroke-width="4"/></svg></div>
+          <div class="body"><h3>逆风车队</h3><p class="d">公路追逐与团队协作并行，动作场面以实拍质感为主。</p><div class="foot"><span>动作</span><span>124 分钟</span></div></div>
+        </article>
+        <article class="fcard" data-cat="动画">
+          <div class="thumb"><svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" fill="#22304a"/><circle cx="160" cy="95" r="52" fill="#f5b93f" opacity=".45"/><path d="M100 150c20-40 100-40 120 0z" fill="#4fd1c5" opacity=".5"/><circle cx="140" cy="85" r="6" fill="#0f1420"/><circle cx="180" cy="85" r="6" fill="#0f1420"/></svg></div>
+          <div class="body"><h3>云上邮差</h3><p class="d">会飞的邮差把信送到山顶，画风温暖，适合亲子共看。</p><div class="foot"><span>动画</span><span>89 分钟</span></div></div>
+        </article>
+        <article class="fcard" data-cat="悬疑">
+          <div class="thumb"><svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" fill="#191f31"/><circle cx="160" cy="100" r="60" stroke="#4fd1c5" stroke-width="4" fill="none" opacity=".6"/><line x1="160" y1="100" x2="160" y2="60" stroke="#f5b93f" stroke-width="5"/><line x1="160" y1="100" x2="196" y2="116" stroke="#f5b93f" stroke-width="5"/></svg></div>
+          <div class="body"><h3>第七封信</h3><p class="d">一封迟到二十年的信件牵出旧案，线索埋在生活场景里。</p><div class="foot"><span>悬疑</span><span>112 分钟</span></div></div>
+        </article>
+        <article class="fcard" data-cat="纪录">
+          <div class="thumb"><svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" fill="#1e2a3f"/><rect x="70" y="60" width="180" height="90" rx="10" fill="none" stroke="#f5b93f" stroke-width="4" opacity=".8"/><circle cx="160" cy="105" r="18" fill="#4fd1c5" opacity=".7"/></svg></div>
+          <div class="body"><h3>河流的四季</h3><p class="d">跟拍一条河沿岸的渔民与护林员，记录一年的水位变化。</p><div class="foot"><span>纪录</span><span>78 分钟</span></div></div>
+        </article>
+        <article class="fcard" data-cat="剧情">
+          <div class="thumb"><svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" fill="#222c44"/><path d="M0 140c60-40 120-40 180 0s120 30 140 10v50H0z" fill="#2a3550"/><circle cx="80" cy="60" r="26" fill="#f5b93f" opacity=".45"/></svg></div>
+          <div class="body"><h3>旧城新雨</h3><p class="d">拆迁前最后一夏，三户人家的生活交织，语言平实。</p><div class="foot"><span>剧情</span><span>104 分钟</span></div></div>
+        </article>
+        <article class="fcard" data-cat="喜剧">
+          <div class="thumb"><svg viewBox="0 0 320 200" aria-hidden="true"><rect width="320" height="200" fill="#252b3d"/><path d="M60 140l40-60 40 40 40-70 40 90z" fill="#4fd1c5" opacity=".45"/><rect x="40" y="150" width="240" height="8" rx="4" fill="#f5b93f" opacity=".7"/></svg></div>
+          <div class="body"><h3>屋顶上的乐队</h3><p class="d">四个业余乐手为一场婚礼排练，笑料与和解同时发生。</p><div class="foot"><span>喜剧</span><span>101 分钟</span></div></div>
+        </article>
+      </div>
+      <p id="emptyTip" hidden style="margin-top:20px;color:#9aa7c2;font-size:14px">该类型片单正在补齐，可先查看全部。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="s-head">
+        <h2>按口碑排序的耐看片</h2>
+        <p>以长期观看反馈整理的顺序，供不想试错时直接取用</p>
+      </div>
+      <div class="rows">
+        <article class="row">
+          <div class="idx">1</div>
+          <div><h3>长夜将尽</h3><p>以四季为章节，把家庭关系的变化放在琐碎日常里，重看时细节更多。</p></div>
+          <span class="tagm">剧情 · 高清</span>
+        </article>
+        <article class="row">
+          <div class="idx">2</div>
+          <div><h3>第七封信</h3><p>悬疑线不依赖突发惊吓，靠时间差与人物记忆的不一致构建张力。</p></div>
+          <span class="tagm">悬疑 · 高清</span>
+        </article>
+        <article class="row">
+          <div class="idx">3</div>
+          <div><h3>河流的四季</h3><p>纪录片的优势在耐心，镜头不催促事件发生，适合安静时段观看。</p></div>
+          <span class="tagm">纪录 · 高清</span>
+        </article>
+        <article class="row">
+          <div class="idx">4</div>
+          <div><h3>云上邮差</h3><p>动画的配色与配乐完成度高，中文配音版本表达自然，儿童易懂。</p></div>
+          <span class="tagm">动画 · 配音</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide">
+    <div class="wrap">
+      <div class="s-head">
+        <h2>观影指南</h2>
+        <p>把“想看”变成“看完”的三个小方法</p>
+      </div>
+      <div class="guide">
+        <div class="gbox">
+          <h3>先定场景，再定类型</h3>
+          <p>天堂免费电影在线观看免费把片单按观看场景切分，是因为在同一时段里，人的注意力长度差别很大。九十分钟以内的作品适合工作日，超过两小时的长片则更适合留到周末。</p>
+          <ul>
+            <li>疲惫时优先轻喜剧与动画，情绪负担低</li>
+            <li>有整块时间再看剧情长片，避免中途打断</li>
+            <li>合家观看先确认配音与题材分级</li>
+          </ul>
+        </div>
+        <div class="gbox">
+          <h3>用片单代替漫无目的滑动</h3>
+          <p>浏览片库时，先选一个类型标签，再看简介第一句是否与当下需求相符。页面上的卡片均标注片长与类型，减少点进详情才发现不合适的情况。天堂免费电影在线观看免费希望选片这一步不超过几分钟。</p>
+          <ul>
+            <li>标签筛选后可继续用口碑顺序对照</li>
+            <li>简介第一句通常写明题材与主线</li>
+            <li>记下想看的片名，下次直接从片库进入</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="s-head">
+        <h2>常见问题</h2>
+        <p>关于片库整理与使用方式的说明</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>页面上的片单是怎么组织的？</summary>
+          <p>以类型和观看场景为主要线索，配合口碑顺序展示。简介只写题材、主线与片长等可核对的信息，不做主观评分堆叠，方便你按自己的偏好判断。</p>
+        </details>
+        <details>
+          <summary>为什么有的影片标注了配音信息？</summary>
+          <p>面向家庭与亲子场景，动画与合家欢片单会额外标注是否有中文配音。信息未确认的作品暂不标注，避免给出不准确的承诺。</p>
+        </details>
+        <details>
+          <summary>找不到想看的类型怎么办？</summary>
+          <p>可以回到片库分类查看全部，或使用页尾的反馈入口说明需求。片单会按实际补充情况更新，尚在补齐中的类型会给出提示，而不是留空白区域。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="dl">
+        <div>
+          <h2>片单手册下载</h2>
+          <p>把本周精选、类型索引与观影指南整合成一份离线手册，方便在没有网络时翻看片名与梗概。天堂免费电影在线观看免费的片单会持续补充，手册版本随后续更新同步。</p>
+        </div>
+        <a class="btn-dl" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">下载</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fbrand">
+        <div class="logo">
+          <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1b2336"/><path d="M24 18l24 14-24 14z" fill="#f5b93f"/></svg>
+          <span>天堂免费电影在线观看免费</span>
+        </div>
+        <p>以片单为核心的电影页面，按类型、场景与口碑整理片目，帮助观众更快选定一部想看的电影。</p>
+      </div>
+      <div class="fcol">
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#picks">本周精选片单</a></li>
+          <li><a href="#library">片库分类</a></li>
+          <li><a href="#guide">观影指南</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>关于页面</h4>
+        <ul>
+          <li><a href="#top">返回首页顶部</a></li>
+          <li><a href="#library">查看全部片单</a></li>
+          <li><a href="#faq">了解整理方式</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>天堂免费电影在线观看免费 · 片单整理与观影指引</span>
+      <span>页面信息随片单补充更新</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btns=document.querySelectorAll('.filters button');
+  var cards=document.querySelectorAll('#cardList .fcard');
+  var empty=document.getElementById('emptyTip');
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      btns.forEach(function(x){x.classList.remove('on')});
+      b.classList.add('on');
+      var cat=b.getAttribute('data-cat'),shown=0;
+      cards.forEach(function(c){
+        var ok=(cat==='all'||c.getAttribute('data-cat')===cat);
+        c.style.display=ok?'':'none';
+        if(ok)shown++;
+      });
+      empty.hidden=shown>0;
+    });
+  });
+})();
+</script>
+</body>
+</html>
